@@ -16,7 +16,7 @@ CREATE TABLE product (
 );
 
 -- Create user.
-DROP OWNED BY productuser;
-DROP USER productuser;
-CREATE USER productuser WITH ENCRYPTED PASSWORD 'Pr0ductUser@123';
-GRANT ALL PRIVILEGES ON DATABASE product to productuser;
+-- DROP OWNED BY productuser;
+-- DROP USER productuser;
+-- CREATE USER productuser WITH PASSWORD 'Pr0ductUser@123';
+-- GRANT ALL PRIVILEGES ON DATABASE product to productuser;

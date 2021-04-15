@@ -1,0 +1,4 @@
+product-api.bin
+mod/
+vendor/
+.env

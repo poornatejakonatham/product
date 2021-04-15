@@ -45,9 +45,10 @@ func (p *product) getProduct(db *sql.DB) error {
 
 func (p *product) createProduct(db *sql.DB) error {
 	err := db.QueryRow(
-		"INSERT INTO product(name, price) VALUES ($1, $2) RETURNING id",
+		"INSERT INTO product(name, price, createdOn) VALUES ($1, $2, $3) RETURNING id",
 		p.Name,
 		p.Price,
+		p.CreatedOn,
 	).Scan(&p.ID)
 	if err != nil {
 		return err

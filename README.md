@@ -28,7 +28,7 @@ go test -v -cover
 
 Writing a "coverage profile". Results will be saved in a file.
 ```bash
-go test -coverprofile=coverage.out
+go test -v -coverprofile=coverage.out
 ```
 
 Function wise beakdown.

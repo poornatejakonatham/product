@@ -1,2 +1,2 @@
 # product
-A simple product catalog.
+A simple product catalog application.

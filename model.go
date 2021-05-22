@@ -31,6 +31,8 @@ func getProducts(db *sql.DB, start, count int) ([]product, error) {
 		if err := rows.Scan(&p.ID, &p.Name, &p.Price, &p.CreatedOn); err != nil {
 			return nil, err
 		}
+
+		products = append(products, p)
 	}
 
 	return products, nil
